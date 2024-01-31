@@ -25,5 +25,8 @@ abstract class IPageRouterService {
 
   openBar(Widget content, BuildContext context,
       {double? width, double? height});
+  openDialog(Widget content, BuildContext context,
+      {double? width, double? height});
+
   dismissBar();
 }
