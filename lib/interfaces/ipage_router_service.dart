@@ -20,13 +20,10 @@ abstract class IPageRouterService {
   void setPageIndex(int index);
   void backToPrevious(BuildContext context, {bool reverse});
   backToPreviousFirst(BuildContext context, String route);
-
   void setCallbackResult(Object current);
-
   openBar(Widget content, BuildContext context,
       {double? width, double? height});
   openDialog(Widget content, BuildContext context,
       {double? width, double? height});
-
-  dismissBar();
+  dismissBar(BuildContext context);
 }
