@@ -5,4 +5,5 @@ abstract class ISecretManager {
   Future<List<StoredSecret>> getSecrets();
   Future<bool> setSecret(StoredSecret secret);
   Future<bool> importSecrets(List<StoredSecret> secrets);
+  Future<bool> copySensitiveData(String data);
 }
