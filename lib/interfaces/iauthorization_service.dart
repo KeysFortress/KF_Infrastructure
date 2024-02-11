@@ -7,4 +7,5 @@ abstract class IAuthorizationService {
   Future<bool> unlockPin(String value);
   Future<bool> unlockTotp(String code);
   Future<bool> enableBiometric();
+  Future<bool> unlockPattern(List<int> input);
 }
