@@ -1,5 +1,5 @@
 abstract class IHttpServer {
-  startServer();
-  restartServer();
-  stopServer();
+  Future startServer();
+  Future restartServer();
+  Future stopServer();
 }
