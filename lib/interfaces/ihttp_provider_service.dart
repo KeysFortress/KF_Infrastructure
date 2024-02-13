@@ -5,9 +5,9 @@ abstract class IHttpProviderService {
   void setToken(String token, dynamic value);
 
   Future<Response?> getRequest(HttpRequest request,
-      {bool isAuthenticated = false});
+      {bool isAuthenticated = false, int timeout});
   Future<Response?> postRequest(HttpRequest request,
-      {bool isAuthenticated = false});
+      {bool isAuthenticated = false, int timeout});
   Future<Response?> putReqest(HttpRequest request,
-      {bool isAuthenticated = false});
+      {bool isAuthenticated = false, int timeout});
 }
