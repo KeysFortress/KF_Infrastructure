@@ -4,6 +4,7 @@ import 'package:domain/models/device.dart';
 abstract class ILocalNetworkService {
   Future<List<Device?>> scan();
   Future<Device> getNetworkData();
-  Future<SimpleKeyPair> getCredentails();
-  Future<bool> connectToDevice(String ip, String challange, String signature);
+  Future<SimpleKeyPair> getCredentails(Device device);
+  Future<bool> connectToDevice(Device device, String challange);
+  Future<String> requestChallange(Device device);
 }
