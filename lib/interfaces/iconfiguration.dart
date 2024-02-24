@@ -1,8 +1,5 @@
-import 'package:domain/models/app_config.dart';
-
 abstract class IConfiguration {
-  AppConfig? config;
-
-  Future<AppConfig> getConfig();
+  late Map<String, dynamic> data;
+  Future<Map<String, dynamic>> load();
   Future<bool> overrideConfig();
 }
