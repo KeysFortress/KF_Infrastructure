@@ -4,4 +4,5 @@ abstract class IDevicesService {
   Future<List<Device>> all();
   Future<bool> add(Device device);
   Future<bool> remove(Device device);
+  Future<bool> isDeviceConnected(Device current);
 }
