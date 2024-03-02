@@ -13,8 +13,15 @@ abstract class IPageRouterService {
   late IObserver observer;
 
   void registerRouter(CoreRouter router);
-  bool changePage(String name, BuildContext context, TransitionData data,
-      {Object? bindingData});
+  bool changePage(
+    String name,
+    BuildContext context,
+    TransitionData data, {
+    Object? bindingData,
+    bool slice = false,
+    int sliceCount = 1,
+    bool saveRoute = true,
+  });
   Object? getPageBindingData();
   bool clearNavigationData();
   void setPageIndex(int index);
