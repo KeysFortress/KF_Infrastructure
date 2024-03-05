@@ -4,5 +4,6 @@ abstract class IOtpService {
   Future<List<OtpCode>> get();
   Future<OtpCode> add(OtpCode code);
   Future<bool> remove(String secret);
+  Future<bool> importCodes(List<OtpCode> list);
   String getCode(String secret);
 }
