@@ -11,6 +11,7 @@ abstract class IPageRouterService {
   late String onSubmit;
   late String dashboard;
   late IObserver observer;
+  late bool isLocked;
 
   void registerRouter(CoreRouter router);
   bool changePage(
