@@ -5,5 +5,5 @@ abstract class IIdentityManager {
   Future<KeyDto> generateIdentity();
   Future<List<StoredIdentity>> getSecrets();
   Future<bool> setSecret(StoredIdentity secret);
-  Future<bool> importSecrets(List<StoredIdentity> secrets);
+  Future<List<StoredIdentity>> importSecrets(List<StoredIdentity> secrets);
 }
