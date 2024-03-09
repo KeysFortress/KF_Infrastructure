@@ -6,6 +6,6 @@ abstract class ISyncService {
   Future<SyncTypes> getSyncType(String devicId);
   setPatrialSyncOptions(String deviceId, List<String> secrets,
       List<String> identities, List<String> otpCodes);
-  oneTimeSync(String deviceId, dynamic data);
+  oneTimeSync(Device device, dynamic data);
   synchronize(Device device);
 }
