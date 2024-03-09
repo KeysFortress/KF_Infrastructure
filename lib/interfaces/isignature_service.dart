@@ -6,4 +6,5 @@ abstract class ISignatureService {
   Future<bool> verifySignature(List<int> message, Signature signature);
   Future<SimpleKeyPair> importKeyPair(String publicKey, String privateKey);
   Future<SimpleKeyPair> importPublic(String publicKey);
+  bool setTemporary(KeyPair keyPair);
 }
