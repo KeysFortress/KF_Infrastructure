@@ -5,5 +5,4 @@ abstract class IDevicesService {
   Future<bool> add(Device device);
   Future<bool> remove(Device device);
   Future<bool> isDeviceConnected(Device current);
-  Future<bool> syncDevices();
 }
