@@ -1,4 +1,5 @@
 import 'package:domain/models/device.dart';
+import 'package:domain/models/device_sync_event.dart';
 import 'package:domain/models/enums.dart';
 import 'package:domain/models/selectable_exchange_data.dart';
 
@@ -10,4 +11,6 @@ abstract class ISyncService {
       List<String> identities, List<String> otpCodes);
   oneTimeSync(Device device, dynamic data);
   synchronize(Device device);
+
+  Future<List<DeviceSyncEvent>> getSyncLog(String mac);
 }
