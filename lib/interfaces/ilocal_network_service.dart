@@ -7,4 +7,5 @@ abstract class ILocalNetworkService {
   Future<SimpleKeyPair> getCredentails(Device device);
   Future<bool> connectToDevice(Device device, String challange);
   Future<String> requestChallange(Device device);
+  Future<String> getLocalAddress();
 }
