@@ -8,4 +8,5 @@ abstract class ILocalNetworkService {
   Future<bool> connectToDevice(Device device, String challange);
   Future<String> requestChallange(Device device);
   Future<String> getLocalAddress();
+  Future<bool> overrideDeviceName(String name);
 }
