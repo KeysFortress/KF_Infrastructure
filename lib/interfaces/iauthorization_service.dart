@@ -16,4 +16,8 @@ abstract class IAuthorizationService {
   Future<bool> setLockTime(int lockTime);
   Future<bool> isDeviceLockEnabled();
   Future<bool> setDeviceLockEnabled(bool state);
+  Future<bool> setSelfDestructAttempts(int totalAttempts);
+  Future<int> getSelfDestructAttemts();
+  Future<bool> setSelfDestructState(bool value);
+  Future<bool> selfDestructActivated();
 }
