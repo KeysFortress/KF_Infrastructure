@@ -11,6 +11,17 @@ abstract class ISyncService {
       List<String> identities, List<String> otpCodes);
   oneTimeSync(Device device, dynamic data);
   synchronize(Device device);
-
   Future<List<DeviceSyncEvent>> getSyncLog(String mac);
+  Future<bool> setServiceState(bool value);
+  Future<bool> setSyncOnAction(bool value);
+  Future<bool> setPasswordAction(bool value);
+  Future<bool> setIdentityAction(bool value);
+  Future<bool> setSecretAction(bool value);
+  Future<bool> setRacAction(bool value);
+  Future<bool> setRlcAction(bool value);
+  Future<bool> setTotpAction(bool value);
+  Future<bool> onConnectionAction(bool value);
+  Future<bool> setTimeBasedSyncAction(bool value);
+  Future<bool> updateTimeToSync(int syncTime);
+  Future<Map<String, dynamic>> getGlobalSettings();
 }
