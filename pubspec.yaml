@@ -17,6 +17,7 @@ dependencies:
   web_socket_channel: ^2.1.0
   cryptography: ^2.7.0
   http: ^1.1.0
+  basic_utils: ^5.7.0
 
 dev_dependencies:
   flutter_test:
