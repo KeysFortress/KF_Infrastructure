@@ -9,4 +9,6 @@ abstract class ILocalNetworkService {
   Future<String> requestChallange(Device device);
   Future<String> getLocalAddress();
   Future<bool> overrideDeviceName(String name);
+  Future<bool> setPort(String number);
+  Future<int> getPort();
 }
