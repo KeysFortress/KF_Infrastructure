@@ -1,6 +1,8 @@
 import 'package:domain/models/enums.dart';
 
 abstract class IAuthorizationService {
+  bool get ignoreLock => false;
+
   Future<bool> isDeviceLocked();
   Future<DeviceLockType> getDeviceLockType();
   Future<bool> setDeviceLockType(DeviceLockType type, {String? value});
@@ -20,4 +22,6 @@ abstract class IAuthorizationService {
   Future<int> getSelfDestructAttemts();
   Future<bool> setSelfDestructState(bool value);
   Future<bool> selfDestructActivated();
+  bool setIgnoreState();
+  bool cancelIgnoreLockState();
 }
