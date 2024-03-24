@@ -5,5 +5,5 @@ abstract class IOtpService {
   Future<OtpCode> add(OtpCode code);
   Future<bool> remove(String secret);
   Future<List<OtpCode>> importCodes(List<OtpCode> list);
-  String getCode(String secret);
+  String getCode(String secret, int interval);
 }
